@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 400;
+  font-weight: 22rem;
+  color: #C4C4CC;
+  position: relative;
+}
+nav a:hover {
+  
+  
+  
+}
+
+
+nav a:hover::after {
+  color: white;
+  z-index: 1;
+ 
+  
+}
+
+nav a::after{
+  transition: color 0.4s;
+  display: block;
+  content: attr(title);
+  position: absolute;
+  font-weight: 700;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+}
+
+#logo {
+  margin-left: 7.2rem;
+}
+
+body {
+  color: white;
+  font-size: 1.6rem;
+  max-width: 128rem;
+  min-height: 100vh;
+  margin: auto;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  background: url("./files/mountains-universe-1.png");
+  background-size: 100vw 100vh;
+
+  
+}
+
+
+header {
+ display: flex;
+ align-items: center;
+ gap: 3.27rem;
+}
+
+nav {
+  height: 12.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+}
+
+#app {
+  margin-top: -7rem;
+  height: calc(100vh - 12.2rem);
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+}
+
+#btn-sabermais {
+  background: transparent;
+  padding: 1.2rem 3.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #FFFFFF;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  margin-top: 2.4rem;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+}
+#btn-sabermais:hover {
+  background: #FFFFFF;
+  color: #02799D;
+}
