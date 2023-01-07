@@ -21,25 +21,23 @@ nav a {
 }
 
 
-nav a:hover::after {
+nav a:hover::before {
   opacity: 1;
-  visibility: visible;
-  z-index: 1;
-   
+
 }
 
-nav a::after{
+nav a::before{
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
   color: white;
   transition: all 0.1s;
   display: block;
   content: attr(title);
-  position: absolute;
   font-weight: 700;
   opacity: 0;
-  visibility: hidden;
-  z-index: -1;
-  top: 0;
-  left: 0;
+  overflow: hidden;
 
 
 }
