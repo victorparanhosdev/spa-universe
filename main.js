@@ -17,8 +17,8 @@ function handle(){
 
 const routes = {
   "/": "/pages/home.html",
-  "/universo": "./pages/ouniverso.html",
-  "/exploracao": "./pages/exploracao.html",
+  "/universo": "/pages/ouniverso.html",
+  "/exploracao": "/pages/exploracao.html",
 }
 
 handle()
