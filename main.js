@@ -8,7 +8,7 @@ function route(event) {
 
 function handle(){
   const { pathname }= window.location
-  const route = routes[pathname]
+  const route = routes[pathname] || routes["/"]
   fetch(route)
   .then(data => data.text())
   .then(html => document.querySelector('#app').innerHTML = html)
@@ -16,7 +16,7 @@ function handle(){
 }
 
 const routes = {
-  "/": "./pages/home.html",
+  "/": "/pages/home.html",
   "/universo": "./pages/ouniverso.html",
   "/exploracao": "./pages/exploracao.html",
 }
