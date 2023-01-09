@@ -10,7 +10,7 @@ const main = document.querySelector('main')
 
 function handle(){
   const { pathname } = window.location
-  const route = routes[pathname] || routes["/home"]
+  const route = routes[pathname] || routes["/"]
 
   if(routes[pathname] == routes["/universo"]){
    main.style.background = "url(./files/mountains-universe02.png"
@@ -22,7 +22,7 @@ function handle(){
     main.style.backgroundSize = "cover"
   }
 
-  if(routes[pathname] == routes["/home"]){
+  if(routes[pathname] == routes["/"]){
     main.style.background = "url(./files/mountains-universe-1.png)"
     main.style.backgroundSize = "cover"
   }
@@ -34,7 +34,7 @@ function handle(){
 }
 
 const routes = {
-  "/home": "/pages/home.html",
+  "/": "/pages/home.html",
   "/universo": "/pages/ouniverso.html",
   "/exploracao": "/pages/exploracao.html",
 }
