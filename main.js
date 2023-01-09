@@ -38,5 +38,6 @@ const routes = {
   "/universo": "/pages/ouniverso.html",
   "/exploracao": "/pages/exploracao.html",
 }
+window.onpopstate = () => handle()
 
 handle()
